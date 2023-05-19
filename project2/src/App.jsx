@@ -18,6 +18,7 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
+      <Link to='/'>Home</Link>
       <Link to='/note'>Note</Link>
       <Link to='/window'>Window</Link>
       <Link to='/p3'>P3</Link>
@@ -29,6 +30,7 @@ const App = () => {
       <Link to='/p1'>P1</Link>
       <Link to='/p2'>P2</Link>
       <Routes>
+        <Route path='/' element ={<P3 />} />
         <Route path='/note' element ={<Note />} />
         <Route path='/window' element ={<Window />} />
         <Route path='/p3' element ={<P3 />} />
